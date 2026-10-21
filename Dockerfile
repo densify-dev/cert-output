@@ -1,4 +1,4 @@
-FROM alpine:3.20
+FROM alpine:latest
 
 RUN apk add openssl
 RUN addgroup -g 3000 densify && adduser -h /home/densify -s /bin/sh -u 3000 -G densify -g "" -D densify && chmod 755 /home/densify
